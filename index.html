@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes Turísticos Anita - Tu aventura comienza aquí</title>
+    <meta name="description" content="Descubre los lugares más increíbles del mundo con Viajes Turísticos Anita. Paquetes de aventura, playa y cultura con la mejor atención.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles_mejorado.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="Imagenes/images/Logo.jpg" alt="Logo Viajes Turísticos Anita" class="logo-round">
+                <h1>Viajes Turísticos Anita</h1>
+            </div>
+            <nav>
+                <button class="mobile-menu-toggle" aria-label="Abrir menú de navegación">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="#inicio" aria-label="Ir a la sección de inicio">Inicio</a></li>
+                    <li><a href="#destinos" aria-label="Ver nuestros destinos turísticos">Destinos</a></li>
+                    <li><a href="#paquetes" aria-label="Explorar paquetes de viaje">Paquetes</a></li>
+                    <li><a href="#testimonios" aria-label="Leer testimonios de clientes">Testimonios</a></li>
+                    <li><a href="#contacto" aria-label="Contactar con nosotros">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="container">
+            <h2>Tu aventura comienza aquí</h2>
+            <p>Descubre los lugares más increíbles de México con nosotros.</p>
+            <button class="cta-button" aria-label="Explorar nuestros destinos">Explorar Destinos</button>
+        </div>
+    </section>
+
+    <section id="destinos" class="destinations">
+        <div class="container">
+            <h2>Nuestros Destinos</h2>
+            <div class="gallery">
+                <div class="destination-item" data-destination="san-juan">
+                    <img src="Imagenes/images/San_Juan_de_los_Lagos.jpeg" alt="Basílica de San Juan de los Lagos, destino religioso y cultural">
+                    <div class="destination-overlay">
+                        <h3>San Juan de los Lagos</h3>
+                        <p>Destino religioso y cultural de México</p>
+                    </div>
+                </div>
+                <div class="destination-item" data-destination="tenacatita">
+                    <img src="Imagenes/images/Los_Angeles_Locos_Tenacatita.jpg" alt="Hotel Los Angeles Locos en la hermosa playa de Tenacatita">
+                    <div class="destination-overlay">
+                        <h3>Hotel "Los Angeles Locos", Tenacatita. Jal</h3>
+                        <p>Relájate en las hermosas playas de Jalisco</p>
+                    </div>
+                </div>
+                <div class="destination-item" data-destination="mazatlan">
+                    <img src="Imagenes/images/Oceano_Palace.jpg" alt="Hotel Oceano Palace en las costas de Mazatlán">
+                    <div class="destination-overlay">
+                        <h3>Hotel "Oceano Palace, Mazatlan", Sinaloa</h3>
+                        <p>Disfruta del Pacífico mexicano</p>
+                    </div>
+                </div>
+                <div class="destination-item" data-destination="ixtapa">
+                    <img src="Imagenes/images/Tesoro_Ixtapa.jpg" alt="Hotel Tesoro Ixtapa frente al mar">
+                    <div class="destination-overlay">
+                        <h3>Hotel "Tesoro Ixtapa", Ixtapa</h3>
+                        <p>Lujo y comodidad frente al mar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="paquetes" class="packages">
+        <div class="container">
+            <h2>Nuestros Paquetes</h2>
+            <div class="package-cards">
+                <div class="package-card" data-package="religioso">
+                    <div class="package-icon">⛪</div>
+                    <h3>Turismo Religioso</h3>
+                    <p>Visita los santuarios más importantes de México, incluyendo San Juan de los Lagos y otros destinos de fe.</p>
+                    <ul class="package-features">
+                        <li>3 días / 2 noches</li>
+                        <li>Transporte incluido</li>
+                        <li>Guía especializado</li>
+                        <li>Hospedaje cómodo</li>
+                    </ul>
+                    <p class="price">$1200</p>
+                    <button class="reserve-btn" data-package="religioso">Reservar</button>
+                </div>
+                <div class="package-card" data-package="playa">
+                    <div class="package-icon">🏖️</div>
+                    <h3>Escapada a la Playa</h3>
+                    <p>Relájate en las mejores playas del Pacífico mexicano con hoteles de primera calidad.</p>
+                    <ul class="package-features">
+                        <li>4 días / 3 noches</li>
+                        <li>Hotel frente al mar</li>
+                        <li>Desayunos incluidos</li>
+                        <li>Actividades acuáticas</li>
+                    </ul>
+                    <p class="price">$950</p>
+                    <button class="reserve-btn" data-package="playa">Reservar</button>
+                </div>
+                <div class="package-card" data-package="familiar">
+                    <div class="package-icon">👨‍👩‍👧‍👦</div>
+                    <h3>Viaje Familiar</h3>
+                    <p>Paquetes diseñados especialmente para familias con actividades para todas las edades.</p>
+                    <ul class="package-features">
+                        <li>5 días / 4 noches</li>
+                        <li>Habitaciones familiares</li>
+                        <li>Actividades para niños</li>
+                        <li>Comidas incluidas</li>
+                    </ul>
+                    <p class="price">$800</p>
+                    <button class="reserve-btn" data-package="familiar">Reservar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonios" class="testimonials">
+        <div class="container">
+            <h2>Lo que dicen nuestros clientes</h2>
+            <div class="carousel">
+                <div class="testimonial-container">
+                    <!-- Los testimonios se cargarán dinámicamente con JavaScript -->
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev" aria-label="Testimonio anterior">‹</button>
+                    <div class="carousel-indicators"></div>
+                    <button class="carousel-btn next" aria-label="Siguiente testimonio">›</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2>Contáctanos</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Información de Contacto</h3>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <p>Calle Principal 123, Ciudad, País</p>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">✉️</span>
+                        <p>info@viajesanita.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">🕒</span>
+                        <p>Lun - Vie: 9:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+                <div class="social-contact">
+                    <h3>Síguenos y Contáctanos</h3>
+                    <p>¡Conéctate con nosotros a través de nuestras redes sociales para obtener información actualizada y contacto directo!</p>
+                    <div class="social-buttons">
+                        <a href="https://wa.me/5213322961969" target="_blank" class="social-btn whatsapp-btn" aria-label="Contactar por WhatsApp">
+                            <div class="social-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                    <path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.893 3.488"/>
+                                </svg>
+                            </div>
+                            <div class="social-text">
+                                <span class="social-title">WhatsApp</span>
+                                <span class="social-subtitle">Chatea con nosotros</span>
+                            </div>
+                        </a>
+                        <a href="https://www.facebook.com/viajes.turisticos.anita/about?locale=es_LA" target="_blank" class="social-btn facebook-btn" aria-label="Visitar nuestra página de Facebook">
+                            <div class="social-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                    <path fill="currentColor" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                </svg>
+                            </div>
+                            <div class="social-text">
+                                <span class="social-title">Facebook</span>
+                                <span class="social-subtitle">Síguenos para ofertas</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="contact-cta">
+                        <p>¿Listo para tu próxima aventura? ¡Contáctanos ahora y comencemos a planificar tu viaje ideal!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Viajes Turísticos Anita</h3>
+                    <p>Tu aventura comienza aquí. Más de 10 años creando experiencias inolvidables.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#destinos">Destinos</a></li>
+                        <li><a href="#paquetes">Paquetes</a></li>
+                        <li><a href="#testimonios">Testimonios</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Síguenos en Facebook">
+                            <span class="social-icon">📘</span> Facebook
+                        </a>
+                        <a href="#" aria-label="Síguenos en Instagram">
+                            <span class="social-icon">📷</span> Instagram
+                        </a>
+                        <a href="#" aria-label="Síguenos en Twitter">
+                            <span class="social-icon">🐦</span> Twitter
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Viajes Turísticos Anita. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal para galería de destinos -->
+    <div class="modal" id="destination-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-body">
+                <img class="modal-image" src="" alt="">
+                <div class="modal-info">
+                    <h3 class="modal-title"></h3>
+                    <p class="modal-description"></p>
+                    <div class="modal-pricing">
+                        <h4>Precios:</h4>
+                        <ul class="pricing-list"></ul>
+                    </div>
+                    <div class="modal-dates">
+                        <p class="travel-dates"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para reservas -->
+    <div class="modal" id="booking-modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="booking-info">
+                <h3 class="booking-title"></h3>
+                <p class="booking-description"></p>
+                <div class="booking-price"></div>
+                <form class="booking-form">
+                    <input type="text" placeholder="Nombre completo" required>
+                    <input type="email" placeholder="Correo electrónico" required>
+                    <input type="tel" placeholder="Teléfono" required>
+                    <input type="date" placeholder="Fecha preferida" required>
+                    <select required>
+                        <option value="">Número de personas</option>
+                        <option value="1">1 persona</option>
+                        <option value="2">2 personas</option>
+                        <option value="3">3 personas</option>
+                        <option value="4">4 personas</option>
+                        <option value="5+">5+ personas</option>
+                    </select>
+                    <textarea placeholder="Comentarios adicionales" rows="3"></textarea>
+                    <button type="submit">Confirmar Reserva</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script_mejorado.js"></script>
+</body>
+</html>
+
