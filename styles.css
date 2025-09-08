@@ -1,0 +1,693 @@
+/* Reset y estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+    color: white;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffe66d;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('assets/images/Portada.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 80px;
+}
+
+.hero h2 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    animation: fadeInUp 1s ease;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    animation: fadeInUp 1s ease 0.3s both;
+}
+
+/* Destinations */
+.destinations {
+    padding: 5rem 0;
+    background: #f8f9fa;
+}
+
+.destinations h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #2c3e50;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.destination-item {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destination-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.destination-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.destination-item h3 {
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* Packages */
+.packages {
+    padding: 5rem 0;
+    background: white;
+}
+
+.packages h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #2c3e50;
+}
+
+.package-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.package-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.package-card:hover {
+    transform: translateY(-5px);
+}
+
+.package-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.package-card p {
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+}
+
+.package-card .price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffe66d;
+    margin-bottom: 1.5rem;
+}
+
+.package-card button {
+    background: #ffe66d;
+    color: #333;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.package-card button:hover {
+    background: #ffd93d;
+    transform: scale(1.05);
+}
+
+/* Testimonials */
+.testimonials {
+    padding: 5rem 0;
+    background: #f8f9fa;
+}
+
+.testimonials h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #2c3e50;
+}
+
+.carousel {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.testimonial-item {
+    background: white;
+    padding: 3rem;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    display: none;
+}
+
+.testimonial-item.active {
+    display: block;
+}
+
+.testimonial-item p {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+.testimonial-item h4 {
+    color: #ff6b6b;
+    font-size: 1.1rem;
+}
+
+/* Contact */
+.contact {
+    padding: 5rem 0;
+    background: white;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #2c3e50;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact input,
+.contact textarea {
+    padding: 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    outline: none;
+    border-color: #4ecdc4;
+}
+
+.contact button {
+    background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.contact button:hover {
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    background: #34495e;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.social-links a:hover {
+    background: #4ecdc4;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    nav ul {
+        gap: 1rem;
+    }
+    
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+    
+    .hero p {
+        font-size: 1.1rem;
+    }
+    
+    .gallery,
+    .package-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .hero h2 {
+        font-size: 2rem;
+    }
+    
+    .destinations h2,
+    .packages h2,
+    .testimonials h2,
+    .contact h2 {
+        font-size: 2rem;
+    }
+    
+    .package-card {
+        padding: 2rem;
+    }
+    
+    .testimonial-item {
+        padding: 2rem;
+    }
+}
+
+/* Botones de contacto */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.social-buttons a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.btn-facebook {
+    background: #1877f2;
+}
+
+.btn-whatsapp {
+    background: #25d366;
+}
+
+.social-buttons a:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* Botones de redes sociales */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.social-buttons a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.btn-facebook {
+    background: #1877f2;
+}
+
+.btn-whatsapp {
+    background: #25d366;
+}
+
+.social-buttons a i {
+    font-size: 1.5rem;
+}
+
+.social-buttons a:hover {
+    transform: scale(1.08);
+    opacity: 0.9;
+}
+
+/* Estilos del Modal */
+.modal {
+    display: none; /* oculto por defecto */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    max-width: 600px;
+    width: 90%;
+    border-radius: 12px;
+    text-align: center;
+    position: relative;
+}
+
+.modal-content img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+.modal-content .price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #1e88e5;
+    margin-top: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: red;
+}
+
+/* Animaciones de apertura y cierre */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.modal.show {
+    display: flex;
+    opacity: 1;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    max-width: 600px;
+    width: 90%;
+    border-radius: 12px;
+    text-align: center;
+    position: relative;
+    transform: scale(0.8);
+    transition: transform 0.4s ease;
+}
+
+.modal.show .modal-content {
+    transform: scale(1);
+}
+
+/* ===============================
+   Destinos - Galería
+   =============================== */
+.destinations .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.destination-item {
+    width: 250px;  /* Tamaño máximo de la tarjeta */
+    cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #fff;
+}
+
+.destination-item img {
+    width: 100%;
+    height: 150px; /* altura fija */
+    object-fit: cover;
+    display: block;
+}
+
+.destination-item h3 {
+    margin: 10px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Hover */
+.destination-item:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+/* ===============================
+   Modal Destinos
+   =============================== */
+#modalDestino {
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+#modalDestino.show {
+    opacity: 1;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 12px;
+    position: relative;
+    transform: scale(0.8);
+    transition: transform 0.4s ease;
+}
+
+#modalDestino.show .modal-content {
+    transform: scale(1);
+}
+
+.modal-content img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.modal-content h2 {
+    margin-top: 15px;
+    font-size: 1.4rem;
+}
+
+.modal-content p {
+    margin: 10px 0;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 600px){
+    .destination-item {
+        width: 45%;
+    }
+    .modal-content img {
+        height: 150px;
+    }
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+}
+
+
+.logo {
+    width: 60px;          /* Ajusta tamaño del logo */
+    height: 60px;         /* Igual que el width para mantener proporción */
+    border-radius: 50%;   /* Esto lo hace redondo */
+    object-fit: cover;    /* Para que la imagen se recorte y no se deforme */
+    margin-right: 15px;
+}

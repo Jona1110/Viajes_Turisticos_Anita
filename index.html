@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes Turísticos Anita</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+    <div class="container header-container">
+        <div class="logo-title">
+            <img src="assets/images/Logo.jpg" alt="Logo Viajes Turísticos Anita" class="logo">
+            <h1>Viajes Turísticos Anita</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#destinos">Destinos</a></li>
+                <li><a href="#paquetes">Paquetes</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+    <section id="inicio" class="hero">
+        <div class="container">
+            <h2>Tu aventura comienza aquí</h2>
+            <p>Descubre los lugares más increíbles de México con nosotros.</p>
+        </div>
+    </section>
+
+    <section id="destinos" class="destinations">
+        <div class="container">
+            <h2>Nuestros Destinos</h2>
+            <div class="gallery">
+                <div class="destination-item">
+                    <img src="assets/images/San_Juan_de_los_Lagos.jpeg" alt="Canadá">
+                    <h3>San Juan de los Lagos</h3>
+                </div>
+                <div class="destination-item">
+                    <img src="assets/images/Los_Angeles_Locos_Tenacatita.jpg" alt="Boyacá">
+                    <h3>Hotel "Los Angeles Locos", Tenacatita. Jal</h3>
+                </div>
+                <div class="destination-item">
+                    <img src="assets/images/Oceano_Palace.jpg" alt="Rafting">
+                    <h3> Hotel "Oceano Palace, Mazatlan", Sinaloa</h3>
+                </div>
+                 <div class="destination-item">
+                    <img src="assets/images/Tesoro_Ixtapa.jpg" alt="Rafting">
+                    <h3> Hotel "Tesoro Ixtapa", Ixtapa</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Modal de Destinos -->
+<div id="modalDestino">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <img id="modalImagen" src="" alt="Imagen del destino">
+        <h2 id="modalTitulo"></h2>
+        <p id="modalDescripcion"></p>
+        <p id="modalPrecio" style="font-weight:bold; color:#ff6b6b;"></p>
+    </div>
+</div>
+
+
+
+    <section id="paquetes" class="packages">
+        <div class="container">
+            <h2>Nuestros Paquetes</h2>
+            <div class="package-cards">
+                <div class="package-card">
+                    <h3>-------------</h3>
+                    <p>---------------------.</p>
+                    <p class="price">$1200</p>
+                    <button>Reservar</button>
+                </div>
+                <div class="package-card">
+                    <h3>-------------------</h3>
+                    <p>-----------.</p>
+                    <p class="price">$950</p>
+                    <button>Reservar</button>
+                </div>
+                <div class="package-card">
+                    <h3>-----------------------</h3>
+                    <p>--------------------------.</p>
+                    <p class="price">$800</p>
+                    <button>Reservar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonios" class="testimonials">
+        <div class="container">
+            <h2>Lo que dicen nuestros clientes</h2>
+            <div class="carousel">
+                <div class="testimonial-item">
+                    <p>"Una experiencia inolvidable, todo perfectamente organizado."</p>
+                    <h4>- María G.</h4>
+                </div>
+                <div class="testimonial-item">
+                    <p>"Los mejores viajes que he hecho, atención de primera."</p>
+                    <h4>- Juan P.</h4>
+                </div>
+                <div class="testimonial-item">
+                    <p>"Volveré a viajar con Viajes Turísticos Anita sin dudarlo."</p>
+                    <h4>- Ana R.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="contacto" class="contact">
+    <div class="container">
+        <h2>Contáctanos</h2>
+        <div class="social-buttons">
+            <a href="https://www.facebook.com/viajes.turisticos.anita/about?locale=es_LA" target="_blank" class="btn-facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://wa.me/5213322961969" target="_blank" class="btn-whatsapp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Viajes Turísticos Anita. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">WhatsApp</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
