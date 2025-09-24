@@ -71,10 +71,10 @@ const destinationData = {
             "Menores de 12 años: GRATIS"
         ],
         dates: "Disfruta de este viaje del 11 al 14 de mayo del 2026."
-    }
+    },
     "ixtapa": {
         title: "Viaje, México",
-        description: "Relájate en México y disfruta todos los destinos que tenemos por visitar.",
+        description: "Relájate en México y disfruta los puntos que visitaremos: Ciudad de Mexico (2 noches en hotel), Teotihuacan, Coyoacán Museo de Frida Khalo, Monumento a la Revolución, Castillo de Chapultepec, Palacio de Bellas Artes, Museo Nacional de Antropologia e Historia, Basilica de Guadalupe, Chiconcuac.",
         image: "Imagenes/images/Viaje_Mexico.jpg",
         pricing: [
             "Adultos: $3,300.00 MXN",
@@ -83,6 +83,7 @@ const destinationData = {
         ],
         dates: "Disfruta de este viaje del 28 al 31 de mayo del 2026."
     }
+
 };
 
 // Datos de paquetes para el modal de reservas
