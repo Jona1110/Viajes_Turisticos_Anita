@@ -72,7 +72,7 @@ const destinationData = {
         ],
         dates: "Disfruta de este viaje del 11 al 14 de mayo del 2026."
     },
-    "ixtapa": {
+    "Mexico": {
         title: "Viaje, México",
         description: "Relájate en México y disfruta los puntos que visitaremos: Ciudad de Mexico (2 noches en hotel), Teotihuacan, Coyoacán Museo de Frida Khalo, Monumento a la Revolución, Castillo de Chapultepec, Palacio de Bellas Artes, Museo Nacional de Antropologia e Historia, Basilica de Guadalupe, Chiconcuac.",
         image: "Imagenes/images/Viaje_Mexico.jpg",
@@ -83,7 +83,6 @@ const destinationData = {
         ],
         dates: "Disfruta de este viaje del 28 al 31 de mayo del 2026."
     }
-
 };
 
 // Datos de paquetes para el modal de reservas
