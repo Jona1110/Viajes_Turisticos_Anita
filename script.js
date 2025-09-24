@@ -72,6 +72,17 @@ const destinationData = {
         ],
         dates: "Disfruta de este viaje del 11 al 14 de mayo del 2026."
     }
+    "ixtapa": {
+        title: "Viaje, México",
+        description: "Relájate en México y disfruta todos los destinos que tenemos por visitar.",
+        image: "Imagenes/images/Viaje_Mexico.jpg",
+        pricing: [
+            "Adultos: $3,300.00 MXN",
+            "Niños mayores de 6 años (Con asiento): $2,500.00"
+            "Aparta tu asiento con $500.00"
+        ],
+        dates: "Disfruta de este viaje del 28 al 31 de mayo del 2026."
+    }
 };
 
 // Datos de paquetes para el modal de reservas
